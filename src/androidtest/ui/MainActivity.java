@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		//test comment.
+		//modified in the origin/master branch
 
 		seekbar = (SeekBar) findViewById(R.id.media_progress);
 		seekbar.setMax(1000);
