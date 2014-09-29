@@ -1,4 +1,4 @@
-package com.example.seekbartest;
+package androidtest.ui;
 
 import java.security.PublicKey;
 
