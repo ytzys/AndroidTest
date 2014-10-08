@@ -47,6 +47,8 @@ public class MainActivity extends Activity {
 		//test comment.
 		//add something in master branch
 		//modified in the origin/master branch
+		
+		//add something in master branch, then push to origin/master
 
 		seekbar = (SeekBar) findViewById(R.id.media_progress);
 		seekbar.setMax(1000);
