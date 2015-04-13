@@ -43,12 +43,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		//test comment.
-		//add something in master branch
-		//modified in the origin/master branch
-		
-		//add something in master branch, then push to origin/master
 
 		seekbar = (SeekBar) findViewById(R.id.media_progress);
 		seekbar.setMax(1000);
@@ -61,6 +55,10 @@ public class MainActivity extends Activity {
 		tmp.sendEmptyMessageDelayed(2, 5000);
 		Log.i(TAG, Environment.getDownloadCacheDirectory().toString());
 		Log.i(TAG, Environment.getDataDirectory().toString());
+		Log.i(TAG, Environment.getExternalStorageDirectory().toString());
+		Log.i(TAG,
+				Environment.getExternalStoragePublicDirectory(
+						Environment.DIRECTORY_DCIM).toString());
 	}
 
 	@Override
@@ -68,6 +66,12 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		super.onSaveInstanceState(outState);
 	}
 
 }
